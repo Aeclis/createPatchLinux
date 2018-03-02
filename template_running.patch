@@ -1,0 +1,13 @@
+
+infosPatch
+checkRequirements
+if [ "$RUNASROOT" == "True" ]; then
+  checkUserIsRoot
+fi
+confirmPatch
+actionsPerformed
+addPatchToList
+
+echo "Done."
+
+exit 0
