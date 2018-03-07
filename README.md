@@ -1,18 +1,17 @@
 # createPatchLinux
 
-This project aims to ease the patches on VM and keep track of what is done in them.
-
-It was created in order to keep the same VM updated for multiple user who wants to have the same behavior.
+This project aims to ease the patches on VM and keep track of what is done in them. It was created in order to keep the same VM updated for multiple user who wants to have the same behavior.
 
 Behavior with Bash before V4 is not tested.
 
 # How it works
-  - Generate your new patch with generate_new_patch.bash script.
-  - Enter the patch name in one word
-  - Choose if the patch needs a root execution
-  - Open "patch-NAMEPATCH.bash" and edit the 2 followings files:
-    - infosPatch will be where you enter all information of what you patch do
-    - actionsPerformed is where you create your patch
+- Generate your new patch with generate_new_patch.bash script.
+- Enter the patch name in one word
+- Choose if the patch needs a root execution
+- Open "patch-NAMEPATCH.bash" and edit the 2 followings files:
+  - infosPatch will be where you enter all information of what you patch do
+  - actionsPerformed is where you create the content of your patch
+- Each patch successfully installed will be added to ~/.PATCHLIST
 
 # Logs functions
 echoInfo "Text message"
